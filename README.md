@@ -12,7 +12,8 @@ You will have access to a $questions variable on which you can loop
 
 Example:
 
-`@if($questions->count() > 0)
+```
+@if($questions->count() > 0)
     <ul>
         @foreach($questions as $question)
             <li><a href="#question-{{ $question->id }}">{{ $question->question }}</a></li>
@@ -29,4 +30,5 @@ Example:
             </div>
         </div>
     @endforeach
-</div>`
+</div>
+```
